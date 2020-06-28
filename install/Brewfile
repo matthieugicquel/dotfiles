@@ -1,0 +1,79 @@
+tap 'homebrew/core'
+tap 'homebrew/bundle'
+tap 'homebrew/cask'
+tap 'homebrew/cask-versions'
+tap 'homebrew/cask-fonts'
+
+cask_args appdir: "/Applications"
+
+# Install Mac App Store apps with homebrew
+brew 'mas' # Mac App Store
+
+# Xcode takes a loooong time to isntall, starting as soon as possible
+# mas 'Xcode', id: 497799835 Install beta instead
+
+# Fonts
+cask 'font-jetbrains-mono'
+
+# Terminal utilities
+brew 'starship'
+brew 'trash'
+brew 'exa'
+brew 'autojump'
+brew 'bat'
+brew 'gh'
+brew 'curl'
+brew 'git'
+brew 'zsh'
+brew 'zsh-completions'
+brew 'zsh-autosuggestions'
+brew 'zsh-syntax-highlighting'
+brew 'dockutil'
+
+# GUI utilities
+cask 'hammerspoon'
+cask 'karabiner-elements'
+cask 'the-unarchiver'
+cask 'dropbox'
+cask 'ukelele'
+cask 'macpass'
+# cask 'google-drive-file-stream'
+mas 'DaisyDisk', id: 411643860
+mas 'AdGuard for Safari', id: 1440147259
+
+# Dev tools
+brew 'transcrypt'
+cask 'viscosity'
+cask 'visual-studio-code'
+cask 'fork'
+cask 'firefox'
+cask 'google-chrome-dev'
+cask 'postman'
+
+# Quicklook plugins
+cask 'qlcolorcode'
+cask 'qlmarkdown'
+cask 'quicklook-json'
+cask 'qlimagesize'
+cask 'quicklookase'
+cask 'qlvideo'
+cask 'qlstephen'
+cask 'provisionql'
+cask 'quicklookapk'
+cask 'betterzip'
+
+# Files & Communication
+cask 'notion'
+cask 'discord'
+cask 'hey'
+# cask 'zoomus' it opens on install and that's annoying
+mas 'Keynote', id: 409183694
+mas 'Numbers', id: 409203825
+mas 'Pages', id: 409201541
+
+# Media
+cask 'vlc'
+cask 'shadow'
+cask 'spotify'
+mas 'iMovie', id: 408981434
+mas 'OCS', id: 1210368783

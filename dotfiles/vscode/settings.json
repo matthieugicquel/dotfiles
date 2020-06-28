@@ -1,0 +1,157 @@
+{
+  /*
+    / General /
+  */
+  // What should happen when opening VS Code?
+  "window.restoreFullscreen": true,
+  "window.restoreWindows": "none",
+  "workbench.startupEditor": "newUntitledFile",
+  // What should VS Code look like?
+  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+  "window.zoomLevel": 0,
+  "workbench.sideBar.location": "right",
+  "workbench.editor.showTabs": false,
+  "workbench.editor.limit.enabled": true,
+  // What should be shown in the window?
+  "editor.minimap.enabled": false,
+  "editor.lineNumbers": "off",
+  "workbench.activityBar.visible": true,
+  "breadcrumbs.enabled": true,
+  "workbench.editor.highlightModifiedTabs": false,
+  "workbench.editor.labelFormat": "medium",
+  "workbench.colorCustomizations": { // don't show underlines for errors, warnings & info, we have the error lens extension
+    "editorError.foreground": "#00000000",
+    "editorWarning.foreground": "#00000000",
+    "editorInfo.foreground": "#00000000",
+    "editorRuler.foreground": "#2b2829"
+  },
+  // What should the text look like?
+  "editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 11,
+  "editor.fontLigatures": true,
+  "workbench.iconTheme": "Monokai Pro (Filter Machine) Icons",
+  // What should happen when typing?
+  "editor.formatOnType": false,
+  "editor.tabCompletion": "on",
+  "editor.snippetSuggestions": "top",
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.suggestSelection": "first",
+  // What should happen when saving?
+  "editor.formatOnSave": true,
+  // What should happen when clicking on things?
+  /*
+   / UI parts /
+  */
+  // Terminal
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.integrated.rendererType": "experimentalWebgl",
+  // File explorer
+  "explorer.sortOrder": "type",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.autoReveal": false,
+  "explorer.incrementalNaming": "smart",
+  "workbench.editor.revealIfOpen": true,
+  "workbench.tree.indent": 6,
+  "workbench.tree.renderIndentGuides": "none",
+  // Annoyances
+  "extensions.ignoreRecommendations": true,
+  "files.simpleDialog.enable": true,
+  "editor.definitionLinkOpensInPeek": false,
+  "workbench.editor.enablePreview": false,
+  /*
+   / Default formatting
+  */
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.tabSize": 2,
+  "editor.comments.insertSpace": true,
+  "editor.trimAutoWhitespace": true,
+  /*
+    / Language-specific settings /
+  */
+  "files.associations": {
+    "*.svelte": "svelte",
+    "*.h": "objective-cpp",
+    "Brewfile": "ruby",
+    "gitconfig*": "properties",
+    "zshrc": "shellscript"
+  },
+  // typescript / javascript
+  "typescript.locale": "en",
+  "typescript.suggest.completeFunctionCalls": true,
+  "javascript.format.enable": true,
+  "typescript.format.enable": true,
+  "javascript.validate.enable": true,
+  "typescript.validate.enable": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "debug.javascript.usePreview": true,
+  // "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  // json
+  "json.format.enable": true,
+  // HTML / css
+  "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
+  "css.lint.boxModel": "warning",
+  "css.lint.duplicateProperties": "warning",
+  /*
+   / Extension settings /
+  */
+  // git
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.enableStatusBarSync": false,
+  "git.inputValidationLength": 100,
+  "git.inputValidationSubjectLength": null,
+  // git lens
+  "gitlens.advanced.blame.delayAfterEdit": 3000,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.blame.toggleMode": "window",
+  "gitlens.hovers.annotations.over": "annotation",
+  "gitlens.statusBar.reduceFlicker": true,
+  "gitlens.menus": {
+    "editorGroup": false
+  },
+  "diffEditor.renderSideBySide": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  // error lens
+  "errorLens.fontWeight": "200",
+  // eslint
+  "eslint.run": "onSave",
+  "eslint.format.enable": true,
+  "eslint.packageManager": "yarn",
+  "eslint.lintTask.enable": true,
+  // customize-ui
+  "customizeUI.activityBar": "bottom",
+  "customizeUI.fontSizeMap": {
+    "13px": "11px",
+    "monospace": "11px",
+    "tab-title": "12px"
+  },
+  "customizeUI.listRowHeight": 20,
+  "customizeUI.font.monospace": "JetBrains Mono",
+  "customizeUI.stylesheet": {
+    ".monaco-list-row .monaco-tl-twistie": "margin-left: -10px !important"
+  },
+  // liveshare
+  "liveshare.presence": false,
+  "liveshare.allowInvites": "all",
+  "liveshare.showInStatusBar": "whileCollaborating",
+  "vsonline.authentication.accountProvider": "Microsoft",
+  // color-highlight
+  "color-highlight.markRuler": false
+  /*
+   / Unsorted /
+  */
+}

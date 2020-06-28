@@ -1,0 +1,43 @@
+prompt_order = [
+    "username",
+    "hostname",
+    "directory",
+    "git_branch",
+    "git_commit",
+    "git_state",
+    "git_status",
+    "docker_context",
+    "package",
+    "nodejs",
+    "python",
+    "ruby",
+    "rust",
+    "cmd_duration",
+    "time",
+    "line_break",
+    "jobs",
+    "battery",
+    "character",
+]
+
+[directory]
+truncation_length = 5
+
+[git_state]
+bisect      = "bisecting"
+cherry_pick = "cherry-picking"
+merge       = "merging"
+rebase      = "rebasing"
+revert      = "reverting"
+
+[git_status]
+stashed = ""
+
+[ruby]
+style = "bold blue"
+
+[time]
+disabled        = false
+format          = "%T"
+style           = "bold dimmed yellow"
+utc_time_offset = "+2"

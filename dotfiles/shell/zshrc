@@ -1,0 +1,37 @@
+# Env vars
+BREW_PREFIX=/usr/local # Having this var set improves the performance of autojump load
+
+# Shell plugins
+source $BREW_PREFIX/share/autojump/autojump.zsh
+source $BREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $BREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Completions
+autoload -Uz compinit
+compinit
+
+# Android SDK
+export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
+path=("$ANDROID_SDK_ROOT/emulator" $path)
+path=("$ANDROID_SDK_ROOT/platform-tools" $path)
+path=("$ANDROID_SDK_ROOT/cmdline-tools/latest/bin" $path)
+# ? Android_HOME
+
+# node
+source "$HOME/.config/fnm.zsh"
+path=("$FNM_DIR/current/bin" $path)
+
+# Ruby
+# export GEM_HOME=$HOME/.gems # to avoid needing sudo
+
+# Rust
+path=("$HOME/.cargo/bin" $path)
+
+# Alias
+source $HOME/.config/alias.zsh
+function help () {
+  bat $HOME/.config/alias.zsh
+}
+
+# Starship prompt
+eval "$(starship init zsh)"
